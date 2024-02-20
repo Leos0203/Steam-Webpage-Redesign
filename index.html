@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steam</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/Steam_icon_logo.png" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar-container">
+        <nav class="navbar">
+          <a href="#" class="navbar-logo-button">
+            <img
+              src="images/Steam_icon_logo.png"
+              alt="Steam Logo"
+              class="navbar-logo"
+            />
+            <span class="navbar-logo-text"
+              >STEAM<span class="navbar-logo-text-rt">&reg;</span></span
+            >
+          </a>
+
+          <ul class="navbar-buttons">
+            <li class="navbar-buttons-item">
+              <button id="navbar-store-button" class="navbar-button">
+                <span id="navbar-store-button-text" class="navbar-button-text"
+                  >STORE</span
+                >
+              </button>
+            </li>
+            <li class="navbar-buttons-item">
+              <button id="navbar-library-button" class="navbar-button">
+                <span id="navbar-library-button-text" class="navbar-button-text"
+                  >LIBRARY</span
+                >
+              </button>
+            </li>
+            <li class="navbar-buttons-item">
+              <button id="navbar-community-button" class="navbar-button">
+                <span
+                  id="navbar-community-button-text"
+                  class="navbar-button-text"
+                  >COMMUNITY</span
+                >
+              </button>
+            </li>
+            <li class="navbar-buttons-item">
+              <button id="navbar-profile-button" class="navbar-button">
+                <span id="navbar-profile-button-text" class="navbar-button-text"
+                  >PROFILE</span
+                >
+              </button>
+            </li>
+          </ul>
+
+          <button id="navbar-profile" class="navbar-profile">
+            <img
+              src="images/profile_picture.jpg"
+              alt="Profile Picture"
+              class="navbar-profile-picture"
+            />
+            <span class="navbar-profile-username">Perfection</span>
+            <svg
+              class="navbar-profile-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                fill="#ffffff"
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+              />
+            </svg>
+            <span class="navbar-profile-money">&dollar;0.00</span>
+          </button>
+        </nav>
+      </div>
+      <div id="profile-menu" class="profile-menu">
+        <button id="view-profile-button" class="profile-menu-button">
+          <span class="profile-menu-button-text">View my profile</span>
+        </button>
+        <button id="account-details-button" class="profile-menu-button">
+          <span class="profile-menu-button-text"
+            >Account details:<span id="account-details-username"
+              >Perfection</span
+            ></span
+          >
+        </button>
+        <button id="store-preferances-button" class="profile-menu-button">
+          <span class="profile-menu-button-text">Store Preferances</span>
+        </button>
+        <button id="view-wallet-button" class="profile-menu-button">
+          <span class="profile-menu-button-text"
+            >View my wallet:<span id="view-wallet-money"
+              >&dollar;0.00</span
+            ></span
+          >
+        </button>
+        <button id="change-account-button" class="profile-menu-button">
+          <span class="profile-menu-button-text">Change Account...</span>
+        </button>
+        <button id="sign-out-button" class="profile-menu-button">
+          <span class="profile-menu-button-text">Sign out of Account</span>
+        </button>
+      </div>
+      <script src="javascript/profile-menu.js" defer></script>
+    </header>
+  </body>
+</html>

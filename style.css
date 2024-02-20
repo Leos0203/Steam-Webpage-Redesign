@@ -1,0 +1,230 @@
+:root {
+  font-size: 62.5%;
+
+  --dark-mode-color: rgb(6, 7, 11);
+  --white-mode-color: rgb(201, 201, 201);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 1.6rem;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  background-color: var(--dark-mode-color);
+  height: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  width: 100%;
+  height: 10%;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  width: inherit;
+  height: inherit;
+  background-color: rgb(11, 14, 26);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo-button {
+  display: flex;
+  height: 60px;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  width: 60px;
+  height: inherit;
+}
+
+.navbar-logo-text {
+  display: flex;
+  color: white;
+  font-size: 3.5rem;
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-logo-text-rt {
+  display: flex;
+  font-size: 1.5rem;
+  margin-left: 3px;
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar-buttons-item {
+  display: flex;
+}
+
+.navbar-button {
+  display: flex;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  margin: 0 1rem;
+}
+
+.navbar-button-text {
+  display: flex;
+  color: rgb(225, 225, 225);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar-button-text:hover {
+  color: white;
+}
+
+#navbar-store-button-text {
+  color: rgb(60, 144, 255);
+  text-decoration: underline 0.3rem;
+  text-underline-offset: 0.8rem;
+}
+
+.navbar-profile {
+  display: flex;
+  background-color: rgb(29, 36, 60);
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  padding: 1rem;
+  border-radius: 5%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-profile:hover {
+  background-color: rgb(44, 56, 93);
+}
+
+.navbar-profile-picture {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  box-shadow: 4px 4px 5px;
+}
+
+.navbar-profile-username {
+  display: flex;
+  color: white;
+  font-size: 2rem;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.navbar-profile-arrow {
+  display: flex;
+  width: 15px;
+  height: 15px;
+}
+
+.navbar-profile-money {
+  display: flex;
+  font-size: 1.5rem;
+  color: gray;
+  margin: 0 10px;
+}
+
+.profile-menu {
+  visibility: hidden;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(38, 48, 79);
+  right: 4%;
+  margin-top: 10px;
+}
+
+.profile-menu-button {
+  display: flex;
+  width: 200px;
+  border: none;
+  background: transparent;
+  outline: none;
+  align-items: center;
+  padding: 10px 0;
+  padding-left: 20px;
+}
+
+.profile-menu-button:hover {
+  background-color: rgb(175, 175, 175);
+}
+
+.profile-menu-button:hover > .profile-menu-button-text {
+  color: black;
+}
+
+.profile-menu-button-text {
+  display: flex;
+  color: white;
+  font-size: 1.4rem;
+}
+
+#account-details-username,
+#view-wallet-money {
+  color: rgb(85, 174, 252);
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+#change-account-button {
+  border-top: 0.05rem solid rgba(143, 143, 143, 0.5);
+}
+
+@media all and (max-width: 950px) {
+  .navbar-logo-text,
+  .navbar-logo-text-rt {
+    display: none;
+  }
+
+  .navbar-profile-username,
+  .navbar-profile-arrow {
+    display: none;
+  }
+}
+
+@media all and (min-width: 950px) {
+  .navbar-logo-text,
+  .navbar-logo-text-rt {
+    visibility: visible;
+    pointer-events: all;
+    display: flex;
+  }
+
+  .navbar-profile-username,
+  .navbar-profile-arrow {
+    visibility: visible;
+    pointer-events: all;
+    display: flex;
+  }
+}
