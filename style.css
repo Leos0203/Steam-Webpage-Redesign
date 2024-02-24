@@ -2,7 +2,6 @@
   font-size: 62.5%;
 
   --dark-mode-color: rgb(6, 7, 11);
-  --white-mode-color: rgb(201, 201, 201);
 }
 
 *,
@@ -155,6 +154,49 @@ body {
   margin: 0 10px;
 }
 
+.searchbar {
+  display: flex;
+  background-color: rgb(28, 36, 68);
+  width: 25%;
+  height: 40%;
+  border-radius: 3%;
+}
+
+.searchbar:hover {
+  background-color: rgb(35, 44, 83);
+}
+
+.searchbar:hover .searchbar-button-image {
+  filter: grayscale(0);
+}
+
+.searchbar-bar {
+  display: flex;
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 90%;
+  color: white;
+  padding-left: 10px;
+  font-size: 1.3rem;
+}
+
+.searchbar-button {
+  display: flex;
+  border: none;
+  background: transparent;
+  outline: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.searchbar-button-image {
+  display: flex;
+  width: 85%;
+  height: 85%;
+  filter: grayscale(100%);
+}
+
 .profile-menu {
   visibility: hidden;
   position: fixed;
@@ -211,6 +253,10 @@ body {
   .navbar-profile-arrow {
     display: none;
   }
+
+  .searchbar {
+    display: none;
+  }
 }
 
 @media all and (min-width: 950px) {
@@ -225,6 +271,10 @@ body {
   .navbar-profile-arrow {
     visibility: visible;
     pointer-events: all;
+    display: flex;
+  }
+
+  .searchbar {
     display: flex;
   }
 }
