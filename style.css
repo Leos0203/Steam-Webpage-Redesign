@@ -206,6 +206,8 @@ body {
   outline: none;
   align-items: center;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: 2px;
 }
 
 .searchbar-button-image {
@@ -327,16 +329,17 @@ body {
     display: none;
   }
 
-  /* .searchbar {
-    display: none;
-  } */
-
   .navbar-dropdown-button {
     display: flex;
   }
 
   .navbar-buttons {
     display: none;
+  }
+
+  .dropdown-menu {
+    visibility: visible;
+    pointer-events: all;
   }
 }
 
@@ -355,15 +358,17 @@ body {
     display: flex;
   }
 
-  /* .searchbar {
-    display: flex;
-  } */
-
   .navbar-dropdown-button {
     display: none;
   }
 
   .navbar-buttons {
     display: flex;
+  }
+
+  .dropdown-menu {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
   }
 }
