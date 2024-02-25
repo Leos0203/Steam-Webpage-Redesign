@@ -29,6 +29,7 @@ main,
 header,
 footer {
   display: flex;
+  flex-direction: column;
 }
 
 /* Navbar */
@@ -39,15 +40,15 @@ header {
 
 .navbar-container {
   display: flex;
-  height: inherit;
-  width: inherit;
+  height: 100%;
+  width: 100%;
 }
 
 .navbar {
   position: fixed;
   display: flex;
-  width: inherit;
-  height: inherit;
+  height: 10%;
+  width: 100%;
   background-color: var(--navbar-color);
   align-items: center;
   justify-content: space-between;
@@ -337,6 +338,69 @@ header {
   text-decoration: underline 0.3rem;
   text-underline-offset: 0.8rem;
 }
+
+/* Left Sidebar */
+main {
+  /* border: 1rem solid white; */
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+  /* border-right: 0.05rem solid white; */
+  align-items: flex-end;
+}
+
+.sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  list-style: none;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar-heading {
+  display: flex;
+  color: rgb(230, 230, 230);
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.sidebar-button {
+  display: flex;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: rgb(209, 209, 209);
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 0.3rem;
+  font-weight: bold;
+}
+
+.sidebar-button:hover {
+  color: white;
+}
+
+/* Scrollbar */
 
 @media all and (max-width: 950px) {
   .navbar-logo-text,
