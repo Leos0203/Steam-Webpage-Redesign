@@ -226,8 +226,8 @@ header {
 
 .searchbar-button-image {
   display: flex;
-  width: 85%;
-  height: 85%;
+  width: 70%;
+  height: 70%;
   filter: grayscale(100%);
 }
 
@@ -281,7 +281,7 @@ header {
 .dropdown-menu {
   display: none;
   position: fixed;
-  left: 15%;
+  left: 50px;
   top: 10%;
   background-color: var(--navbar-color);
   align-items: center;
@@ -347,6 +347,8 @@ header {
 
   .navbar-dropdown-button {
     display: flex;
+    margin-right: auto;
+    margin-left: 20px;
   }
 
   .navbar-buttons {
@@ -356,6 +358,11 @@ header {
   .dropdown-menu {
     visibility: visible;
     pointer-events: all;
+  }
+
+  .searchbar {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
