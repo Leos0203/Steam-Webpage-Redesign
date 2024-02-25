@@ -22,6 +22,20 @@
             >
           </a>
 
+          <button id="navbar-dropdown-button" class="navbar-dropdown-button">
+            <svg
+              class="navbar-dropdown-button-image"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                fill="#ffffff"
+                d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"
+              />
+            </svg>
+          </button>
+
           <ul class="navbar-buttons">
             <li class="navbar-buttons-item">
               <button id="navbar-store-button" class="navbar-button">
@@ -95,6 +109,47 @@
         </nav>
       </div>
 
+      <div class="dropdown-menu" id="dropdown-menu">
+        <ul class="dropdown-menu-list">
+          <li class="dropdown-menu-item">
+            <button id="dropdown-store-button" class="dropdown-menu-button">
+              <span
+                id="dropdown-store-button-text"
+                class="dropdown-menu-button-text"
+                >STORE</span
+              >
+            </button>
+          </li>
+          <li class="dropdown-menu-item">
+            <button id="dropdown-library-button" class="dropdown-menu-button">
+              <span
+                id="dropdown-library-button-text"
+                class="dropdown-menu-button-text"
+                >LIBRARY</span
+              >
+            </button>
+          </li>
+          <li class="dropdown-menu-item">
+            <button id="dropdown-community-button" class="dropdown-menu-button">
+              <span
+                id="dropdown-community-button-text"
+                class="dropdown-menu-button-text"
+                >COMMUNITY</span
+              >
+            </button>
+          </li>
+          <li class="dropdown-menu-item">
+            <button id="dropdown-profile-button" class="dropdown-menu-button">
+              <span
+                id="dropdown-profile-button-text"
+                class="dropdown-menu-button-text"
+                >PROFILE</span
+              >
+            </button>
+          </li>
+        </ul>
+      </div>
+
       <div id="profile-menu" class="profile-menu">
         <button id="view-profile-button" class="profile-menu-button">
           <span class="profile-menu-button-text">View my profile</span>
@@ -124,6 +179,7 @@
         </button>
       </div>
       <script src="javascript/profile-menu.js" defer></script>
+      <script src="javascript/dropdown-menu.js" defer></script>
     </header>
   </body>
 </html>
